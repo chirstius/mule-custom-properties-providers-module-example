@@ -4,7 +4,7 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package com.my.company.custom.provider;
+package org.mule.dynamic.routing.provider;
 
 public class TestObject {
 

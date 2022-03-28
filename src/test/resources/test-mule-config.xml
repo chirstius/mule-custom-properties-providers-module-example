@@ -6,7 +6,7 @@
 
     <custom-properties-provider:config name="config" customParameter="myCustomParameter"/>
 
-    <object name="testObject" class="com.my.company.custom.provider.TestObject">
+    <object name="testObject" class="org.mule.dynamic.routing.provider.TestObject">
         <property key="valueFromProperty" value="${custom-properties-provider::testKey}" />
     </object>
 

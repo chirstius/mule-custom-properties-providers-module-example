@@ -4,10 +4,10 @@
  * (or other master license agreement) separately entered into in writing between you and
  * MuleSoft. If such an agreement is not in place, you may not use the software.
  */
-package com.my.company.custom.provider.api;
+package org.mule.dynamic.routing.provider.api;
 
-import static com.my.company.custom.provider.api.CustomConfigurationPropertiesExtensionLoadingDelegate.CONFIG_ELEMENT;
-import static com.my.company.custom.provider.api.CustomConfigurationPropertiesExtensionLoadingDelegate.EXTENSION_NAME;
+import static org.mule.dynamic.routing.provider.api.CustomConfigurationPropertiesExtensionLoadingDelegate.CONFIG_ELEMENT;
+import static org.mule.dynamic.routing.provider.api.CustomConfigurationPropertiesExtensionLoadingDelegate.EXTENSION_NAME;
 import static org.mule.runtime.api.component.ComponentIdentifier.builder;
 import static org.mule.runtime.extension.api.util.NameUtils.defaultNamespace;
 import org.mule.runtime.api.component.ComponentIdentifier;

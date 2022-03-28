@@ -1,4 +1,4 @@
-package com.my.company.custom.provider;
+package org.mule.dynamic.routing.provider;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;

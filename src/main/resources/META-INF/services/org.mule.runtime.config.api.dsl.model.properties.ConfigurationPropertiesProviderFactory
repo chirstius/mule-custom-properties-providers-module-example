@@ -1,1 +1,1 @@
-com.my.company.custom.provider.api.CustomConfigurationPropertiesProviderFactory
+org.mule.dynamic.routing.provider.api.CustomConfigurationPropertiesProviderFactory
