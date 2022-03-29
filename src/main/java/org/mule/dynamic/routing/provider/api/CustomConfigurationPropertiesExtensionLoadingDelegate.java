@@ -24,7 +24,7 @@ import org.mule.runtime.extension.api.loader.ExtensionLoadingDelegate;
 public class CustomConfigurationPropertiesExtensionLoadingDelegate implements ExtensionLoadingDelegate {
 
   // TODO replace with you extension name. This must be a meaningful name for this module.
-    public static final String EXTENSION_NAME = "Custom Properties Provider";
+    public static final String EXTENSION_NAME = "Dynamic Router Properties Provider";
     public static final String CONFIG_ELEMENT = "config";
 
   @Override
@@ -34,7 +34,7 @@ public class CustomConfigurationPropertiesExtensionLoadingDelegate implements Ex
         .withCategory(SELECT)
         .onVersion("1.0.0")
         // TODO replace with you company name
-        .fromVendor("MyCompany")
+        .fromVendor("Mulesoft")
         // This defines a global element in the extension with name config
         .withConfig(CONFIG_ELEMENT);
 

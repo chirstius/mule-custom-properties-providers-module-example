@@ -30,7 +30,7 @@ public class CustomConfigurationPropertiesProviderFactory implements Configurati
   private static final ComponentIdentifier CUSTOM_PROPERTIES_PROVIDER =
       builder().namespace(EXTENSION_NAMESPACE).name(CONFIG_ELEMENT).build();
   // TODO change to meaningful prefix
-  private final static String CUSTOM_PROPERTIES_PREFIX = "custom-properties-provider::";
+  private final static String CUSTOM_PROPERTIES_PREFIX = "dynamic-router-properties-provider::";
   private static final String TEST_KEY = "routerId";
 
   @Override
