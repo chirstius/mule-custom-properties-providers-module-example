@@ -41,9 +41,9 @@ public class CustomConfigurationPropertiesExtensionLoadingDelegate implements Ex
     ParameterGroupDeclarer defaultParameterGroup = configurationDeclarer.onDefaultParameterGroup();
     // TODO you can add/remove configuration parameter using the code below.
     defaultParameterGroup
-        .withRequiredParameter("customParameter").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
+        .withRequiredParameter("routerId").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
         .withExpressionSupport(NOT_SUPPORTED)
-        .describedAs(" Meaningful description of what customParameter is for");
+        .describedAs("Router ID lookup key for self registration");
   }
 
 }

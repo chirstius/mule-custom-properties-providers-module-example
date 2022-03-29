@@ -4,10 +4,10 @@
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
           http://www.mulesoft.org/schema/mule/custom-properties-provider http://www.mulesoft.org/schema/mule/custom-properties-provider/current/mule-custom-properties-provider.xsd">
 
-    <custom-properties-provider:config name="config" customParameter="myCustomParameter"/>
+    <custom-properties-provider:config name="config" routerId="myCustomParameter"/>
 
     <object name="testObject" class="org.mule.dynamic.routing.provider.TestObject">
-        <property key="valueFromProperty" value="${custom-properties-provider::testKey}" />
+        <property key="valueFromProperty" value="${custom-properties-provider::routerId}" />
     </object>
 
 </mule>

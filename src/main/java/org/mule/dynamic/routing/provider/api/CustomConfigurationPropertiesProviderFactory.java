@@ -31,7 +31,7 @@ public class CustomConfigurationPropertiesProviderFactory implements Configurati
       builder().namespace(EXTENSION_NAMESPACE).name(CONFIG_ELEMENT).build();
   // TODO change to meaningful prefix
   private final static String CUSTOM_PROPERTIES_PREFIX = "custom-properties-provider::";
-  private static final String TEST_KEY = "testKey";
+  private static final String TEST_KEY = "routerId";
 
   @Override
   public ComponentIdentifier getSupportedComponentIdentifier() {
@@ -43,7 +43,7 @@ public class CustomConfigurationPropertiesProviderFactory implements Configurati
                                                         ResourceProvider externalResourceProvider) {
 
     // This is how you can access the configuration parameter of the <custom-properties-provider:config> element.
-    String customParameterValue = parameters.getStringParameter("customParameter");
+    String customParameterValue = parameters.getStringParameter("routerId");
 
     return new ConfigurationPropertiesProvider() {
 
