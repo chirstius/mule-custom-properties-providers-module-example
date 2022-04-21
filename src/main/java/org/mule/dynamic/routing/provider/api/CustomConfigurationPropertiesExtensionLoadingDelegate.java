@@ -17,13 +17,13 @@ import org.mule.runtime.extension.api.loader.ExtensionLoadingContext;
 import org.mule.runtime.extension.api.loader.ExtensionLoadingDelegate;
 
 /**
- * Declares extension for Secure Properties Configuration module
+ * Declares extension to perform runtime registration of an API to
+ * a dynamic router
  *
  * @since 1.0
  */
 public class CustomConfigurationPropertiesExtensionLoadingDelegate implements ExtensionLoadingDelegate {
 
-  // TODO replace with you extension name. This must be a meaningful name for this module.
     public static final String EXTENSION_NAME = "Dynamic Router Properties Provider";
     public static final String CONFIG_ELEMENT = "config";
 
@@ -33,17 +33,21 @@ public class CustomConfigurationPropertiesExtensionLoadingDelegate implements Ex
         .describedAs(String.format("Crafted %s Extension", EXTENSION_NAME))
         .withCategory(SELECT)
         .onVersion("1.0.0")
-        // TODO replace with you company name
         .fromVendor("Mulesoft")
-        // This defines a global element in the extension with name config
         .withConfig(CONFIG_ELEMENT);
 
     ParameterGroupDeclarer defaultParameterGroup = configurationDeclarer.onDefaultParameterGroup();
-    // TODO you can add/remove configuration parameter using the code below.
+    // you can add/remove configuration parameter using the code below.
+    	/*
+    	defaultParameterGroup
+    	.withRequiredParameter("protocol").ofType(BaseTypeBuilder.create(JAVA).stringType().enumOf("HTTP","HTTPS").defaultValue("HTTP").build())
+    	.withExpressionSupport(NOT_SUPPORTED)
+    	.describedAs(" URL for the API");
+    	*/
     defaultParameterGroup
-        .withRequiredParameter("routerId").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
+        .withRequiredParameter("routerAddress").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
         .withExpressionSupport(NOT_SUPPORTED)
-        .describedAs("Router ID lookup key for self registration");
+        .describedAs("URL of the dynamic router for API registration");
   }
 
 }

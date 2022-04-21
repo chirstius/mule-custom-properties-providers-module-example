@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.mule.dynamic.routing.provider</groupId>
-    <artifactId>mule-custom-properties-providers-module</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>router-properties-provider</artifactId>
+    <version>1.0.0-SNAPSHOT-47</version>
     <packaging>mule-extension</packaging>
     <name>Dynamic Router properties provider Extension</name>
 
@@ -22,6 +22,24 @@
             <artifactId>mule-module-spring-config</artifactId>
             <version>${mule.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- COMMONS-IO -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <!-- OKHTTPCLIENT -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.2</version>
+        </dependency>
+        <!-- JSON PARSING -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
         </dependency>
     </dependencies>
 

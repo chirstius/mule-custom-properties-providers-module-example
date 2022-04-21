@@ -7,7 +7,7 @@
       "type": "org.mule.dynamic.routing.provider.api.CustomConfigurationPropertiesExtensionLoadingDelegate"
     }
   },
-  "name": "custom-properties-provider",
+  "name": "dynamic-router-properties",
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",
     "attributes": {
